@@ -1,10 +1,15 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
+import Rightsidebar from '../components/Rightsidebar'
+import Main from '../components/Main'
 
 const Home = () => {
   return (
-    <div>
-      This is a hhome page
-    </div>
+  <main className='w-[100%] flex items-center mt-2 abso'>
+      <Sidebar/>
+      <Main/>
+      <Rightsidebar/>
+  </main>
   )
 }
 

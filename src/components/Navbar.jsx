@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaRegBell } from "react-icons/fa";
 import { RxAvatar } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
@@ -9,7 +10,9 @@ const Navbar = () => {
     <nav className='h-[50px] shadow flex justify-between items-center px-10'>
         <div className='flex items-center'>
             <div className='w-[100px]'>
-            <img src="logo 1.png" alt="" className='logo' />
+              <Link to="/">
+              <img src="logo 1.png" alt="" className='logo' />
+              </Link>
             </div>
             <div className='flex items-center bg-gray-100 rounded p-1 ms-4'>
                 <CiSearch />
